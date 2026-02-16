@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Die with a Smile - Music Player</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- 🔥 ROOT WRAPPER (CRITICAL FIX) -->
+    <div class="app-root">
+
+        <!-- Background Glow -->
+        <div class="background-blur"></div>
+
+        <!-- Main Layout -->
+        <div class="app-layout">
+
+            <!-- LEFT: Lyrics -->
+            <div class="lyrics-panel" id="lyrics">
+
+                <p data-time="0.00">Ooh</p>
+
+                <p data-time="6.40">I, I just woke up from a dream</p>
+                <p data-time="11.20">Where you and I had to say goodbye</p>
+                <p data-time="16.80">And I don't know what it all means</p>
+                <p data-time="21.60">But since I survived, I realized</p>
+
+                <p data-time="27.40">Wherever you go, that's where I'll follow</p>
+                <p data-time="33.20">Nobody's promised tomorrow</p>
+                <p data-time="38.80">
+                    So I'ma love you every night like it's the last night
+                </p>
+                <p data-time="46.40">Like it's the last night</p>
+
+                <p data-time="52.60">
+                    If the world was ending, I'd wanna be next to you
+                </p>
+                <p data-time="60.20">
+                    If the party was over and our time on Earth was through
+                </p>
+                <p data-time="68.00">
+                    I'd wanna hold you just for a while and die with a smile
+                </p>
+                <p data-time="75.80">
+                    If the world was ending, I'd wanna be next to you
+                </p>
+
+                <p data-time="83.40">Ooh</p>
+
+                <p data-time="88.80">
+                    Ooh, lost, lost in the words that we scream
+                </p>
+                <p data-time="95.60">
+                    I don't even wanna do this anymore
+                </p>
+                <p data-time="101.80">
+                    'Cause you already know what you mean to me
+                </p>
+                <p data-time="108.60">
+                    And our love's the only war worth fighting for
+                </p>
+
+                <p data-time="116.20">
+                    Wherever you go, that's where I'll follow
+                </p>
+                <p data-time="122.20">Nobody's promised tomorrow</p>
+                <p data-time="127.80">
+                    So I'ma love you every night like it's the last night
+                </p>
+                <p data-time="135.20">Like it's the last night</p>
+
+                <p data-time="141.60">
+                    If the world was ending, I'd wanna be next to you
+                </p>
+                <p data-time="149.20">
+                    If the party was over and our time on Earth was through
+                </p>
+                <p data-time="157.00">
+                    I'd wanna hold you just for a while and die with a smile
+                </p>
+                <p data-time="164.80">
+                    If the world was ending, I'd wanna be next to you
+                </p>
+
+                <p data-time="172.20">Right next to you</p>
+                <p data-time="176.40">Next to you</p>
+                <p data-time="180.40">Right next to you</p>
+
+                <p data-time="185.60">Oh-oh, oh</p>
+
+                <p data-time="190.80">
+                    If the world was ending, I'd wanna be next to you
+                </p>
+                <p data-time="198.40">
+                    If the party was over and our time on Earth was through
+                </p>
+                <p data-time="206.20">
+                    I'd wanna hold you just for a while and die with a smile
+                </p>
+                <p data-time="214.00">
+                    If the world was ending, I'd wanna be next to you
+                </p>
+
+                <p data-time="221.60">
+                    If the world was ending, I'd wanna be next to you
+                </p>
+
+                <p data-time="229.40">Ooh</p>
+                <p data-time="234.00">I'd wanna be next to you</p>
+            </div>
+
+            <!-- RIGHT: Player -->
+            <div class="player-container">
+                <div class="player-card">
+
+                    <div class="cover-wrapper">
+                        <div id="cover-art"></div>
+                    </div>
+
+                    <div class="song-info">
+                        <h2 id="song-title">Die with a Smile</h2>
+                        <p id="artist-name">By Ash</p>
+                    </div>
+
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <div class="time-info">
+                            <span id="current-time">0:00</span>
+                            <span id="duration">4:14</span>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <button class="control-btn prev-btn" id="prev-btn">
+                            ◀◀
+                        </button>
+
+                        <button class="control-btn play-btn" id="play-btn">
+                            <svg id="play-icon" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                            <svg id="pause-icon" class="hidden" viewBox="0 0 24 24">
+                                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                            </svg>
+                        </button>
+
+                        <button class="control-btn next-btn" id="next-btn">
+                            ▶▶
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Audio -->
+        <audio id="audio-player" src="assets/music.mp3"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
