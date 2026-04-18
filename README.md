@@ -1,7 +1,6 @@
 🎵 WebSong – Glassmorphism Music Player
 
 A modern, aesthetic web-based music player built using HTML, CSS, and JavaScript featuring a glassmorphism UI design with background artwork and synced lyrics display.
-
 📌 Project Overview ::-
 
 ->>WebSong is a lightweight front-end music player that:
